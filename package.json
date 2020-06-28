@@ -1,0 +1,20 @@
+{
+  "name": "learning-javascript-data-structures-and-algorithms-3rd-edition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wulakaka/Learning-JavaScript-Data-Structures-And-Algorithms-3rd-Edition.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wulakaka/Learning-JavaScript-Data-Structures-And-Algorithms-3rd-Edition/issues"
+  },
+  "homepage": "https://github.com/Wulakaka/Learning-JavaScript-Data-Structures-And-Algorithms-3rd-Edition#readme",
+  "dependencies": {}
+}

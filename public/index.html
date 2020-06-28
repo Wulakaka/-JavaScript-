@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    hello world
+    <script src="./src/js/stack.js"></script>
+    <script>
+      const stack = new Stack();
+      stack.push(1);
+      stack.push(1);
+      stack.push(3);
+      console.log(stack.isEmpty());
+      console.log(stack.toString());
+      console.log(decimalToBinary(333));
+      console.log(baseConverter(333,32));
+
+      //   十进制转化为二进制
+      function decimalToBinary(decNumber) {
+        const remStack = new Stack();
+        let number = decNumber;
+        let rem;
+        let binaryString = "";
+
+        while (number > 0) {
+          rem = Math.floor(number % 2);
+          remStack.push(rem);
+          number = Math.floor(number / 2);
+        }
+        while (!remStack.isEmpty()) {
+          binaryString += remStack.pop().toString();
+        }
+        return binaryString;
+      }
+
+      function baseConverter(decNumber, base) {
+        const remStack = new Stack()
+        const digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let number = decNumber;
+        let rem;
+        let baseString = '';
+
+        if(!(base>=2 && base <= 36)) {
+          return '';
+        }
+
+        while(number > 0) {
+          rem = Math.floor(number % base);
+          remStack.push(rem);
+          number = Math.floor(number /base);
+        }
+        while (!remStack.isEmpty()) {
+          baseString += digits[remStack.pop()]
+        }
+
+        return baseString
+      }
+    </script>
+  </body>
+</html>
