@@ -1,7 +1,4 @@
-import { Queue } from "../public/src/js/queue.js";
-const queue = new Queue();
-queue.enqueue(1);
-queue.enqueue(11);
-queue.enqueue(36);
-queue.dequeue();
-console.log(queue.toString());
+import "./js/queue.js";
+import "./js/deque.js";
+// import "./js/linkedList.js";
+import "./js/doublyLinkedList.js";
