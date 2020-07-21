@@ -18,7 +18,9 @@
     "url": "https://github.com/Wulakaka/Learning-JavaScript-Data-Structures-And-Algorithms-3rd-Edition/issues"
   },
   "homepage": "https://github.com/Wulakaka/Learning-JavaScript-Data-Structures-And-Algorithms-3rd-Edition#readme",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.19"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^4.3.0",
